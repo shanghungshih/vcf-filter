@@ -1,0 +1,24 @@
+{
+    "hookers": {
+        "PASS": {
+            "key": "PASS",
+            "type": "==",
+            "value": "PASS"
+        },
+        "AF>=0.1": {
+            "key": "AF",
+            "type": ">=",
+            "value": 0.1
+        },
+        "AF>=0.5": {
+            "key": "AF",
+            "type": ">=",
+            "value": 0.5
+        },
+        "ACMG_list": {
+            "key": "Gene.refGene",
+            "type": "in",
+            "value": ["a_gene", "b_gene", "c_gene"]
+        }
+    }
+}
