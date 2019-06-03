@@ -118,7 +118,7 @@ Inputs:
 
 Usage:
 1. Import files with start and end into database
-    python3 vcf_filter.py -v /home/nas210/TaiwanBiobank_data/joint-calling-vcf/taiwan_biobank_joint_calling_993_SNP_INDEL.recaled.decompose.normalize.vcf.gz -H hookers.json
+    python3 vcf-filter.py -v sample1.hg19_multianno.vcf,sample2.hg19_multianno.vcf -H hookers.json
 """))
     optional = parser._action_groups.pop()
     required = parser.add_argument_group('required arguments')
