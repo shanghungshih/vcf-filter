@@ -1,5 +1,5 @@
 # vcf-filter
-multi-hookers (key for filtering) &amp; multi-threads implementation for vcf filtering
+multi-hookers (key for filtering, count if variant pass all hookers) &amp; multi-threads implementation for vcf filtering
 
 ## Prerequisite
 * Python 3
@@ -67,20 +67,23 @@ python3 vcf-filter.py -v sample1.hg19_multianno.vcf,sample2.hg19_multianno.vcf -
 }
 ```
 
-- example output
+- output
+    - `total`: # of total variants
+    - `pass_hookers`: # of variants that pass all hookers
 ```
 INFO     [vcf] : ['sample1.hg19_multianno.vcf', 'sample2.hg19_multianno.vcf']
 INFO     [hookers file] : [hookers.json]
-INFO     [hookers] : ['PASS', 'AF<0.1', 'AF>=0.5', 'Func.refGene', 'ExonicFunc.refGene', 'ACMG_list']
+INFO     [hookers] : ['PASS', 'AF<0.1', 'Func.refGene', 'ExonicFunc.refGene', 'ACMG_list']
 INFO     [write2file] : [False]
 INFO     [threads] : [1]
-INFO     {'total': 20, 'PASS': 0, 'AF<0.1': 0, 'AF>=0.5': 20, 'Func.refGene': 1, 'ExonicFunc.refGene': 1, 'ACMG_list': 1}
+INFO     {'total': 20, 'pass_hookers': 0, 'PASS': 0, 'AF<0.1': 0, 'Func.refGene': 1, 'ExonicFunc.refGene': 1, 'ACMG_list': 1}
 INFO     done for [sample1.hg19_multianno.vcf] (0.00 min).
-INFO     {'total': 20, 'PASS': 0, 'AF<0.1': 0, 'AF>=0.5': 20, 'Func.refGene': 1, 'ExonicFunc.refGene': 1, 'ACMG_list': 1}
+INFO     {'total': 20, 'pass_hookers': 0, 'PASS': 0, 'AF<0.1': 0, 'Func.refGene': 1, 'ExonicFunc.refGene': 1, 'ACMG_list': 1}
 INFO     done for [sample2.hg19_multianno.vcf] (0.00 min).
 ```
 
 ## Notes
+- count if variant pass all hookers
 - for input file, only .vcf will be accepted.
 - configure the hookers.json before you run the program, and make sure the key of each hooker appear in your vcf annotation.
 - multi-threads is for multiple vcfs.

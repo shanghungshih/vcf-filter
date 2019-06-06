@@ -7,12 +7,6 @@ import json
 import re
 import time
 
-logger_stdout = logging.getLogger(__name__+'stdout')
-logger_stdout.setLevel(logging.INFO)
-stdout_handler = logging.StreamHandler()
-stdout_handler.setFormatter(logging.Formatter('%(levelname)-8s %(message)s'))
-logger_stdout.addHandler(stdout_handler)
-
 VERSION = (0, 1, 0)
 __version__ = '.'.join(map(str, VERSION[0:3])) + ''.join(VERSION[3:])
 
@@ -20,7 +14,7 @@ class vcf_filter:
     def __init__(self, vcf, hookers):
         self.vcf = vcf
         self.hookers = hookers['hookers']
-        self.results = {'total': 0}
+        self.results = {'total': 0, 'pass_hookers': 0}
         for hooker in self.hookers:
             self.results[hooker] = 0
         self.counter()
@@ -53,38 +47,53 @@ class vcf_filter:
     def counter(self):
         generator = self.variant_generator()
         for variant in generator:
-            if self.results['total'] == 10000:
-                break
+            flag = True
             self.results['total'] += 1
             for hooker in self.hookers:
                 try:
                     if self.hookers[hooker]['type'] == '==':
                         if variant[self.hookers[hooker]['key']] == self.hookers[hooker]['value']:
                             self.results[hooker] += 1
+                        else:
+                            flag = False
                     elif self.hookers[hooker]['type'] == '>=':
                         if variant[self.hookers[hooker]['key']] >= self.hookers[hooker]['value']:
                             self.results[hooker] += 1
+                        else:
+                            flag = False
                     elif self.hookers[hooker]['type'] == '<=':
                         if variant[self.hookers[hooker]['key']] <= self.hookers[hooker]['value']:
                             self.results[hooker] += 1
+                        else:
+                            flag = False
                     elif self.hookers[hooker]['type'] == '>':
                         if variant[self.hookers[hooker]['key']] > self.hookers[hooker]['value']:
                             self.results[hooker] += 1
+                        else:
+                            flag = False
                     elif self.hookers[hooker]['type'] == '<':
                         if variant[self.hookers[hooker]['key']] < self.hookers[hooker]['value']:
                             self.results[hooker] += 1
+                        else:
+                            flag = False
                     elif self.hookers[hooker]['type'] == 'in':
                         if variant[self.hookers[hooker]['key']] in self.hookers[hooker]['value']:
                             self.results[hooker] += 1
+                        else:
+                            flag = False
                     elif self.hookers[hooker]['type'] == 'not in':
                         if variant[self.hookers[hooker]['key']] not in self.hookers[hooker]['value']:
                             self.results[hooker] += 1
+                        else:
+                            flag = False
                 except TypeError:
                     logger_stdout.info('ERROR [%s] contain >= two alt' %(variant))
                     exit()
                 except KeyError:
                     logger_stdout.info('ERROR key [%s] for [%s] not in vcf' %(self.hookers[hooker]['key'], hooker))
                     exit()
+            if flag is True:
+                self.results['pass_hookers'] += 1
             
 def str2bool(v):
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
@@ -132,6 +141,13 @@ Usage:
 
     with open(args.hookers) as f:
         hookers = json.loads(f.read())
+
+    logging.basicConfig(level = logging.INFO, filename = "%s.log" %(args.vcfs))
+    logger_stdout = logging.getLogger('stdout')
+    logger_stdout.setLevel(logging.INFO)
+    stdout_handler = logging.StreamHandler()
+    stdout_handler.setFormatter(logging.Formatter('%(levelname)-8s %(message)s'))
+    logger_stdout.addHandler(stdout_handler)
     
     logger_stdout.info('[vcf] : %s' %(args.vcfs.split(',')))
     logger_stdout.info('[hookers file] : [%s]' %(args.hookers))
