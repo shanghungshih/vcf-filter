@@ -43,11 +43,6 @@ python3 vcf-filter.py -v sample1.hg19_multianno.vcf,sample2.hg19_multianno.vcf -
             "type": "<",
             "value": 0.1
         },
-        "AF>=0.5": {
-            "key": "AF",
-            "type": ">=",
-            "value": 0.5
-        },
         "Func.refGene": {
             "key": "Func.refGene",
             "type": "==",
