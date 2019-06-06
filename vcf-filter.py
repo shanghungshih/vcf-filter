@@ -133,9 +133,9 @@ Usage:
     with open(args.hookers) as f:
         hookers = json.loads(f.read())
     
-    logger_stdout.info('[vcf] : %s' %(args.vcfs))
+    logger_stdout.info('[vcf] : %s' %(args.vcfs.split(',')))
     logger_stdout.info('[hookers file] : [%s]' %(args.hookers))
-    logger_stdout.info('[hookers] : %s' %(hookers.keys()))
+    logger_stdout.info('[hookers] : %s' %([i for i in hookers['hookers'].keys()]))
     logger_stdout.info('[write2file] : [%s]' %(args.write2file))
     logger_stdout.info('[threads] : [%s]' %(args.thread))
     
