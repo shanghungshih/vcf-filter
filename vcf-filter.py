@@ -142,7 +142,7 @@ Usage:
     with open(args.hookers) as f:
         hookers = json.loads(f.read())
 
-    logging.basicConfig(level = logging.INFO, filename = "%s.log" %(args.vcfs))
+    logging.basicConfig(level = logging.INFO, filename = "%s.log" %('.'.join(args.hookers.split('.')[:-1])))
     logger_stdout = logging.getLogger('stdout')
     logger_stdout.setLevel(logging.INFO)
     stdout_handler = logging.StreamHandler()
