@@ -1,0 +1,332 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=LowQual,Description="Low quality">
+##FORMAT=<ID=AD,Number=.,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="The phred-scaled genotype likelihoods rounded to the closest integer">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes, for each ALT allele, in the same order as listed">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele frequency, for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=BaseQRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt Vs. Ref base qualities">
+##INFO=<ID=ClippingRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref number of hard clipped bases">
+##INFO=<ID=DB,Number=0,Type=Flag,Description="dbSNP membership">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Combined depth across samples">
+##INFO=<ID=ExcessHet,Number=1,Type=Float,Description="Phred-scaled p-value for exact test of excess heterozygosity">
+##INFO=<ID=FS,Number=1,Type=Float,Description="Phred-scaled p-value using Fisher's exact test to detect strand bias">
+##INFO=<ID=InbreedingCoeff,Number=1,Type=Float,Description="Inbreeding coefficient as estimated from the genotype likelihoods per-sample when compared against the Hardy-Weinberg expectation">
+##INFO=<ID=MLEAC,Number=A,Type=Integer,Description="Maximum likelihood expectation (MLE) for the allele counts, for each ALT allele, in the same order as listed">
+##INFO=<ID=MLEAF,Number=A,Type=Float,Description="Maximum likelihood expectation (MLE) for the allele frequency, for each ALT allele, in the same order as listed">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS mapping quality">
+##INFO=<ID=MQRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref read mapping qualities">
+##INFO=<ID=QD,Number=1,Type=Float,Description="Variant Confidence/Quality by Depth">
+##INFO=<ID=ReadPosRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias">
+##INFO=<ID=SOR,Number=1,Type=Float,Description="Symmetric Odds Ratio of 2x2 contingency table to detect strand bias">
+##SentieonCommandLine.Haplotyper=<ID=Haplotyper,Version="sentieon-genomics-201808",Date="2018-10-13T09:09:30Z",CommandLine="/home/u2/u3365865/bin/sentieon-genomics-201808/libexec/driver -r /home/u2/u3365865/biobank/run_tbb_sentieon/Reference/ref_hg19/ucsc.hg19.fasta -t 32 -i NGS2_20150101A.realigned.bam -q NGS2_20150101A.recal_data.table --algo Haplotyper -d /home/u2/u3365865/biobank/run_tbb_sentieon/Reference/ref_hg19/dbsnp_138.hg19.vcf --emit_conf=10 --call_conf=30 NGS2_20150101A.output-hc.vcf.gz">
+##contig=<ID=chrM,length=16571,assembly=hg19>
+##contig=<ID=chr1,length=249250621,assembly=hg19>
+##contig=<ID=chr2,length=243199373,assembly=hg19>
+##contig=<ID=chr3,length=198022430,assembly=hg19>
+##contig=<ID=chr4,length=191154276,assembly=hg19>
+##contig=<ID=chr5,length=180915260,assembly=hg19>
+##contig=<ID=chr6,length=171115067,assembly=hg19>
+##contig=<ID=chr7,length=159138663,assembly=hg19>
+##contig=<ID=chr8,length=146364022,assembly=hg19>
+##contig=<ID=chr9,length=141213431,assembly=hg19>
+##contig=<ID=chr10,length=135534747,assembly=hg19>
+##contig=<ID=chr11,length=135006516,assembly=hg19>
+##contig=<ID=chr12,length=133851895,assembly=hg19>
+##contig=<ID=chr13,length=115169878,assembly=hg19>
+##contig=<ID=chr14,length=107349540,assembly=hg19>
+##contig=<ID=chr15,length=102531392,assembly=hg19>
+##contig=<ID=chr16,length=90354753,assembly=hg19>
+##contig=<ID=chr17,length=81195210,assembly=hg19>
+##contig=<ID=chr18,length=78077248,assembly=hg19>
+##contig=<ID=chr19,length=59128983,assembly=hg19>
+##contig=<ID=chr20,length=63025520,assembly=hg19>
+##contig=<ID=chr21,length=48129895,assembly=hg19>
+##contig=<ID=chr22,length=51304566,assembly=hg19>
+##contig=<ID=chrX,length=155270560,assembly=hg19>
+##contig=<ID=chrY,length=59373566,assembly=hg19>
+##contig=<ID=chr1_gl000191_random,length=106433,assembly=hg19>
+##contig=<ID=chr1_gl000192_random,length=547496,assembly=hg19>
+##contig=<ID=chr4_ctg9_hap1,length=590426,assembly=hg19>
+##contig=<ID=chr4_gl000193_random,length=189789,assembly=hg19>
+##contig=<ID=chr4_gl000194_random,length=191469,assembly=hg19>
+##contig=<ID=chr6_apd_hap1,length=4622290,assembly=hg19>
+##contig=<ID=chr6_cox_hap2,length=4795371,assembly=hg19>
+##contig=<ID=chr6_dbb_hap3,length=4610396,assembly=hg19>
+##contig=<ID=chr6_mann_hap4,length=4683263,assembly=hg19>
+##contig=<ID=chr6_mcf_hap5,length=4833398,assembly=hg19>
+##contig=<ID=chr6_qbl_hap6,length=4611984,assembly=hg19>
+##contig=<ID=chr6_ssto_hap7,length=4928567,assembly=hg19>
+##contig=<ID=chr7_gl000195_random,length=182896,assembly=hg19>
+##contig=<ID=chr8_gl000196_random,length=38914,assembly=hg19>
+##contig=<ID=chr8_gl000197_random,length=37175,assembly=hg19>
+##contig=<ID=chr9_gl000198_random,length=90085,assembly=hg19>
+##contig=<ID=chr9_gl000199_random,length=169874,assembly=hg19>
+##contig=<ID=chr9_gl000200_random,length=187035,assembly=hg19>
+##contig=<ID=chr9_gl000201_random,length=36148,assembly=hg19>
+##contig=<ID=chr11_gl000202_random,length=40103,assembly=hg19>
+##contig=<ID=chr17_ctg5_hap1,length=1680828,assembly=hg19>
+##contig=<ID=chr17_gl000203_random,length=37498,assembly=hg19>
+##contig=<ID=chr17_gl000204_random,length=81310,assembly=hg19>
+##contig=<ID=chr17_gl000205_random,length=174588,assembly=hg19>
+##contig=<ID=chr17_gl000206_random,length=41001,assembly=hg19>
+##contig=<ID=chr18_gl000207_random,length=4262,assembly=hg19>
+##contig=<ID=chr19_gl000208_random,length=92689,assembly=hg19>
+##contig=<ID=chr19_gl000209_random,length=159169,assembly=hg19>
+##contig=<ID=chr21_gl000210_random,length=27682,assembly=hg19>
+##contig=<ID=chrUn_gl000211,length=166566,assembly=hg19>
+##contig=<ID=chrUn_gl000212,length=186858,assembly=hg19>
+##contig=<ID=chrUn_gl000213,length=164239,assembly=hg19>
+##contig=<ID=chrUn_gl000214,length=137718,assembly=hg19>
+##contig=<ID=chrUn_gl000215,length=172545,assembly=hg19>
+##contig=<ID=chrUn_gl000216,length=172294,assembly=hg19>
+##contig=<ID=chrUn_gl000217,length=172149,assembly=hg19>
+##contig=<ID=chrUn_gl000218,length=161147,assembly=hg19>
+##contig=<ID=chrUn_gl000219,length=179198,assembly=hg19>
+##contig=<ID=chrUn_gl000220,length=161802,assembly=hg19>
+##contig=<ID=chrUn_gl000221,length=155397,assembly=hg19>
+##contig=<ID=chrUn_gl000222,length=186861,assembly=hg19>
+##contig=<ID=chrUn_gl000223,length=180455,assembly=hg19>
+##contig=<ID=chrUn_gl000224,length=179693,assembly=hg19>
+##contig=<ID=chrUn_gl000225,length=211173,assembly=hg19>
+##contig=<ID=chrUn_gl000226,length=15008,assembly=hg19>
+##contig=<ID=chrUn_gl000227,length=128374,assembly=hg19>
+##contig=<ID=chrUn_gl000228,length=129120,assembly=hg19>
+##contig=<ID=chrUn_gl000229,length=19913,assembly=hg19>
+##contig=<ID=chrUn_gl000230,length=43691,assembly=hg19>
+##contig=<ID=chrUn_gl000231,length=27386,assembly=hg19>
+##contig=<ID=chrUn_gl000232,length=40652,assembly=hg19>
+##contig=<ID=chrUn_gl000233,length=45941,assembly=hg19>
+##contig=<ID=chrUn_gl000234,length=40531,assembly=hg19>
+##contig=<ID=chrUn_gl000235,length=34474,assembly=hg19>
+##contig=<ID=chrUn_gl000236,length=41934,assembly=hg19>
+##contig=<ID=chrUn_gl000237,length=45867,assembly=hg19>
+##contig=<ID=chrUn_gl000238,length=39939,assembly=hg19>
+##contig=<ID=chrUn_gl000239,length=33824,assembly=hg19>
+##contig=<ID=chrUn_gl000240,length=41933,assembly=hg19>
+##contig=<ID=chrUn_gl000241,length=42152,assembly=hg19>
+##contig=<ID=chrUn_gl000242,length=43523,assembly=hg19>
+##contig=<ID=chrUn_gl000243,length=43341,assembly=hg19>
+##contig=<ID=chrUn_gl000244,length=39929,assembly=hg19>
+##contig=<ID=chrUn_gl000245,length=36651,assembly=hg19>
+##contig=<ID=chrUn_gl000246,length=38154,assembly=hg19>
+##contig=<ID=chrUn_gl000247,length=36422,assembly=hg19>
+##contig=<ID=chrUn_gl000248,length=39786,assembly=hg19>
+##contig=<ID=chrUn_gl000249,length=38502,assembly=hg19>
+##reference=file:///home/u2/u3365865/biobank/run_tbb_sentieon/Reference/ref_hg19/ucsc.hg19.fasta
+##INFO=<ID=OLD_MULTIALLELIC,Number=1,Type=String,Description="Original chr:pos:ref:alt encoding">
+##INFO=<ID=OLD_VARIANT,Number=.,Type=String,Description="Original chr:pos:ref:alt encoding">
+##INFO=<ID=ANNOVAR_DATE,Number=1,Type=String,Description="Flag the start of ANNOVAR annotation for one alternative allele">
+##INFO=<ID=Func.refGene,Number=.,Type=String,Description="Func.refGene annotation provided by ANNOVAR">
+##INFO=<ID=Gene.refGene,Number=.,Type=String,Description="Gene.refGene annotation provided by ANNOVAR">
+##INFO=<ID=GeneDetail.refGene,Number=.,Type=String,Description="GeneDetail.refGene annotation provided by ANNOVAR">
+##INFO=<ID=ExonicFunc.refGene,Number=.,Type=String,Description="ExonicFunc.refGene annotation provided by ANNOVAR">
+##INFO=<ID=AAChange.refGene,Number=.,Type=String,Description="AAChange.refGene annotation provided by ANNOVAR">
+##INFO=<ID=Func.knownGene,Number=.,Type=String,Description="Func.knownGene annotation provided by ANNOVAR">
+##INFO=<ID=Gene.knownGene,Number=.,Type=String,Description="Gene.knownGene annotation provided by ANNOVAR">
+##INFO=<ID=GeneDetail.knownGene,Number=.,Type=String,Description="GeneDetail.knownGene annotation provided by ANNOVAR">
+##INFO=<ID=ExonicFunc.knownGene,Number=.,Type=String,Description="ExonicFunc.knownGene annotation provided by ANNOVAR">
+##INFO=<ID=AAChange.knownGene,Number=.,Type=String,Description="AAChange.knownGene annotation provided by ANNOVAR">
+##INFO=<ID=Func.ensGene,Number=.,Type=String,Description="Func.ensGene annotation provided by ANNOVAR">
+##INFO=<ID=Gene.ensGene,Number=.,Type=String,Description="Gene.ensGene annotation provided by ANNOVAR">
+##INFO=<ID=GeneDetail.ensGene,Number=.,Type=String,Description="GeneDetail.ensGene annotation provided by ANNOVAR">
+##INFO=<ID=ExonicFunc.ensGene,Number=.,Type=String,Description="ExonicFunc.ensGene annotation provided by ANNOVAR">
+##INFO=<ID=AAChange.ensGene,Number=.,Type=String,Description="AAChange.ensGene annotation provided by ANNOVAR">
+##INFO=<ID=avsnp150,Number=.,Type=String,Description="avsnp150 annotation provided by ANNOVAR">
+##INFO=<ID=CLNALLELEID,Number=.,Type=String,Description="CLNALLELEID annotation provided by ANNOVAR">
+##INFO=<ID=CLNDN,Number=.,Type=String,Description="CLNDN annotation provided by ANNOVAR">
+##INFO=<ID=CLNDISDB,Number=.,Type=String,Description="CLNDISDB annotation provided by ANNOVAR">
+##INFO=<ID=CLNREVSTAT,Number=.,Type=String,Description="CLNREVSTAT annotation provided by ANNOVAR">
+##INFO=<ID=CLNSIG,Number=.,Type=String,Description="CLNSIG annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_exome_ALL,Number=.,Type=String,Description="gnomAD_exome_ALL annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_exome_AFR,Number=.,Type=String,Description="gnomAD_exome_AFR annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_exome_AMR,Number=.,Type=String,Description="gnomAD_exome_AMR annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_exome_ASJ,Number=.,Type=String,Description="gnomAD_exome_ASJ annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_exome_EAS,Number=.,Type=String,Description="gnomAD_exome_EAS annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_exome_FIN,Number=.,Type=String,Description="gnomAD_exome_FIN annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_exome_NFE,Number=.,Type=String,Description="gnomAD_exome_NFE annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_exome_OTH,Number=.,Type=String,Description="gnomAD_exome_OTH annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_exome_SAS,Number=.,Type=String,Description="gnomAD_exome_SAS annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_genome_ALL,Number=.,Type=String,Description="gnomAD_genome_ALL annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_genome_AFR,Number=.,Type=String,Description="gnomAD_genome_AFR annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_genome_AMR,Number=.,Type=String,Description="gnomAD_genome_AMR annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_genome_ASJ,Number=.,Type=String,Description="gnomAD_genome_ASJ annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_genome_EAS,Number=.,Type=String,Description="gnomAD_genome_EAS annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_genome_FIN,Number=.,Type=String,Description="gnomAD_genome_FIN annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_genome_NFE,Number=.,Type=String,Description="gnomAD_genome_NFE annotation provided by ANNOVAR">
+##INFO=<ID=gnomAD_genome_OTH,Number=.,Type=String,Description="gnomAD_genome_OTH annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_ALL,Number=.,Type=String,Description="ExAC_ALL annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_AFR,Number=.,Type=String,Description="ExAC_AFR annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_AMR,Number=.,Type=String,Description="ExAC_AMR annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_EAS,Number=.,Type=String,Description="ExAC_EAS annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_FIN,Number=.,Type=String,Description="ExAC_FIN annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_NFE,Number=.,Type=String,Description="ExAC_NFE annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_OTH,Number=.,Type=String,Description="ExAC_OTH annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_SAS,Number=.,Type=String,Description="ExAC_SAS annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nontcga_ALL,Number=.,Type=String,Description="ExAC_nontcga_ALL annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nontcga_AFR,Number=.,Type=String,Description="ExAC_nontcga_AFR annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nontcga_AMR,Number=.,Type=String,Description="ExAC_nontcga_AMR annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nontcga_EAS,Number=.,Type=String,Description="ExAC_nontcga_EAS annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nontcga_FIN,Number=.,Type=String,Description="ExAC_nontcga_FIN annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nontcga_NFE,Number=.,Type=String,Description="ExAC_nontcga_NFE annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nontcga_OTH,Number=.,Type=String,Description="ExAC_nontcga_OTH annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nontcga_SAS,Number=.,Type=String,Description="ExAC_nontcga_SAS annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nonpsych_ALL,Number=.,Type=String,Description="ExAC_nonpsych_ALL annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nonpsych_AFR,Number=.,Type=String,Description="ExAC_nonpsych_AFR annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nonpsych_AMR,Number=.,Type=String,Description="ExAC_nonpsych_AMR annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nonpsych_EAS,Number=.,Type=String,Description="ExAC_nonpsych_EAS annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nonpsych_FIN,Number=.,Type=String,Description="ExAC_nonpsych_FIN annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nonpsych_NFE,Number=.,Type=String,Description="ExAC_nonpsych_NFE annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nonpsych_OTH,Number=.,Type=String,Description="ExAC_nonpsych_OTH annotation provided by ANNOVAR">
+##INFO=<ID=ExAC_nonpsych_SAS,Number=.,Type=String,Description="ExAC_nonpsych_SAS annotation provided by ANNOVAR">
+##INFO=<ID=1000g2015aug_all,Number=1,Type=Float,Description="1000g2015aug_all annotation provided by ANNOVAR">
+##INFO=<ID=1000g2015aug_eas,Number=1,Type=Float,Description="1000g2015aug_eas annotation provided by ANNOVAR">
+##INFO=<ID=1000g2015aug_afr,Number=1,Type=Float,Description="1000g2015aug_afr annotation provided by ANNOVAR">
+##INFO=<ID=1000g2015aug_amr,Number=1,Type=Float,Description="1000g2015aug_amr annotation provided by ANNOVAR">
+##INFO=<ID=1000g2015aug_sas,Number=1,Type=Float,Description="1000g2015aug_sas annotation provided by ANNOVAR">
+##INFO=<ID=1000g2015aug_eur,Number=1,Type=Float,Description="1000g2015aug_eur annotation provided by ANNOVAR">
+##INFO=<ID=esp6500siv2_ea,Number=1,Type=Float,Description="esp6500siv2_ea annotation provided by ANNOVAR">
+##INFO=<ID=esp6500siv2_aa,Number=1,Type=Float,Description="esp6500siv2_aa annotation provided by ANNOVAR">
+##INFO=<ID=esp6500siv2_all,Number=1,Type=Float,Description="esp6500siv2_all annotation provided by ANNOVAR">
+##INFO=<ID=Kaviar_AF,Number=.,Type=String,Description="Kaviar_AF annotation provided by ANNOVAR">
+##INFO=<ID=Kaviar_AC,Number=.,Type=String,Description="Kaviar_AC annotation provided by ANNOVAR">
+##INFO=<ID=Kaviar_AN,Number=.,Type=String,Description="Kaviar_AN annotation provided by ANNOVAR">
+##INFO=<ID=HRC_AF,Number=.,Type=String,Description="HRC_AF annotation provided by ANNOVAR">
+##INFO=<ID=HRC_AC,Number=.,Type=String,Description="HRC_AC annotation provided by ANNOVAR">
+##INFO=<ID=HRC_AN,Number=.,Type=String,Description="HRC_AN annotation provided by ANNOVAR">
+##INFO=<ID=HRC_non1000G_AF,Number=.,Type=String,Description="HRC_non1000G_AF annotation provided by ANNOVAR">
+##INFO=<ID=HRC_non1000G_AC,Number=.,Type=String,Description="HRC_non1000G_AC annotation provided by ANNOVAR">
+##INFO=<ID=HRC_non1000G_AN,Number=.,Type=String,Description="HRC_non1000G_AN annotation provided by ANNOVAR">
+##INFO=<ID=abraom_freq,Number=.,Type=String,Description="abraom_freq annotation provided by ANNOVAR">
+##INFO=<ID=abraom_filter,Number=.,Type=String,Description="abraom_filter annotation provided by ANNOVAR">
+##INFO=<ID=abraom_cegh_filter,Number=.,Type=String,Description="abraom_cegh_filter annotation provided by ANNOVAR">
+##INFO=<ID=GME_AF,Number=.,Type=String,Description="GME_AF annotation provided by ANNOVAR">
+##INFO=<ID=GME_NWA,Number=.,Type=String,Description="GME_NWA annotation provided by ANNOVAR">
+##INFO=<ID=GME_NEA,Number=.,Type=String,Description="GME_NEA annotation provided by ANNOVAR">
+##INFO=<ID=GME_AP,Number=.,Type=String,Description="GME_AP annotation provided by ANNOVAR">
+##INFO=<ID=GME_Israel,Number=.,Type=String,Description="GME_Israel annotation provided by ANNOVAR">
+##INFO=<ID=GME_SD,Number=.,Type=String,Description="GME_SD annotation provided by ANNOVAR">
+##INFO=<ID=GME_TP,Number=.,Type=String,Description="GME_TP annotation provided by ANNOVAR">
+##INFO=<ID=GME_CA,Number=.,Type=String,Description="GME_CA annotation provided by ANNOVAR">
+##INFO=<ID=cg46,Number=1,Type=Float,Description="cg46 annotation provided by ANNOVAR">
+##INFO=<ID=cg69,Number=1,Type=Float,Description="cg69 annotation provided by ANNOVAR">
+##INFO=<ID=cosmic70,Number=.,Type=String,Description="cosmic70 annotation provided by ANNOVAR">
+##INFO=<ID=nci60,Number=1,Type=Float,Description="nci60 annotation provided by ANNOVAR">
+##INFO=<ID=ICGC_Id,Number=.,Type=String,Description="ICGC_Id annotation provided by ANNOVAR">
+##INFO=<ID=ICGC_Occurrence,Number=.,Type=String,Description="ICGC_Occurrence annotation provided by ANNOVAR">
+##INFO=<ID=SIFT_score,Number=.,Type=String,Description="SIFT_score annotation provided by ANNOVAR">
+##INFO=<ID=SIFT_converted_rankscore,Number=.,Type=String,Description="SIFT_converted_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=SIFT_pred,Number=.,Type=String,Description="SIFT_pred annotation provided by ANNOVAR">
+##INFO=<ID=LRT_score,Number=.,Type=String,Description="LRT_score annotation provided by ANNOVAR">
+##INFO=<ID=LRT_converted_rankscore,Number=.,Type=String,Description="LRT_converted_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=LRT_pred,Number=.,Type=String,Description="LRT_pred annotation provided by ANNOVAR">
+##INFO=<ID=MutationTaster_score,Number=.,Type=String,Description="MutationTaster_score annotation provided by ANNOVAR">
+##INFO=<ID=MutationTaster_converted_rankscore,Number=.,Type=String,Description="MutationTaster_converted_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=MutationTaster_pred,Number=.,Type=String,Description="MutationTaster_pred annotation provided by ANNOVAR">
+##INFO=<ID=MutationAssessor_score,Number=.,Type=String,Description="MutationAssessor_score annotation provided by ANNOVAR">
+##INFO=<ID=MutationAssessor_score_rankscore,Number=.,Type=String,Description="MutationAssessor_score_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=MutationAssessor_pred,Number=.,Type=String,Description="MutationAssessor_pred annotation provided by ANNOVAR">
+##INFO=<ID=FATHMM_score,Number=.,Type=String,Description="FATHMM_score annotation provided by ANNOVAR">
+##INFO=<ID=FATHMM_converted_rankscore,Number=.,Type=String,Description="FATHMM_converted_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=FATHMM_pred,Number=.,Type=String,Description="FATHMM_pred annotation provided by ANNOVAR">
+##INFO=<ID=PROVEAN_score,Number=.,Type=String,Description="PROVEAN_score annotation provided by ANNOVAR">
+##INFO=<ID=PROVEAN_converted_rankscore,Number=.,Type=String,Description="PROVEAN_converted_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=PROVEAN_pred,Number=.,Type=String,Description="PROVEAN_pred annotation provided by ANNOVAR">
+##INFO=<ID=MetaSVM_score,Number=.,Type=String,Description="MetaSVM_score annotation provided by ANNOVAR">
+##INFO=<ID=MetaSVM_rankscore,Number=.,Type=String,Description="MetaSVM_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=MetaSVM_pred,Number=.,Type=String,Description="MetaSVM_pred annotation provided by ANNOVAR">
+##INFO=<ID=MetaLR_score,Number=.,Type=String,Description="MetaLR_score annotation provided by ANNOVAR">
+##INFO=<ID=MetaLR_rankscore,Number=.,Type=String,Description="MetaLR_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=MetaLR_pred,Number=.,Type=String,Description="MetaLR_pred annotation provided by ANNOVAR">
+##INFO=<ID=M-CAP_score,Number=.,Type=String,Description="M-CAP_score annotation provided by ANNOVAR">
+##INFO=<ID=M-CAP_rankscore,Number=.,Type=String,Description="M-CAP_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=M-CAP_pred,Number=.,Type=String,Description="M-CAP_pred annotation provided by ANNOVAR">
+##INFO=<ID=MutPred_score,Number=.,Type=String,Description="MutPred_score annotation provided by ANNOVAR">
+##INFO=<ID=MutPred_rankscore,Number=.,Type=String,Description="MutPred_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=fathmm-MKL_coding_score,Number=.,Type=String,Description="fathmm-MKL_coding_score annotation provided by ANNOVAR">
+##INFO=<ID=fathmm-MKL_coding_rankscore,Number=.,Type=String,Description="fathmm-MKL_coding_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=fathmm-MKL_coding_pred,Number=.,Type=String,Description="fathmm-MKL_coding_pred annotation provided by ANNOVAR">
+##INFO=<ID=Eigen_coding_or_noncoding,Number=.,Type=String,Description="Eigen_coding_or_noncoding annotation provided by ANNOVAR">
+##INFO=<ID=Eigen-raw,Number=.,Type=String,Description="Eigen-raw annotation provided by ANNOVAR">
+##INFO=<ID=Eigen-PC-raw,Number=.,Type=String,Description="Eigen-PC-raw annotation provided by ANNOVAR">
+##INFO=<ID=GenoCanyon_score,Number=.,Type=String,Description="GenoCanyon_score annotation provided by ANNOVAR">
+##INFO=<ID=GenoCanyon_score_rankscore,Number=.,Type=String,Description="GenoCanyon_score_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=integrated_fitCons_score,Number=.,Type=String,Description="integrated_fitCons_score annotation provided by ANNOVAR">
+##INFO=<ID=integrated_fitCons_score_rankscore,Number=.,Type=String,Description="integrated_fitCons_score_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=integrated_confidence_value,Number=.,Type=String,Description="integrated_confidence_value annotation provided by ANNOVAR">
+##INFO=<ID=GERP++_RS,Number=.,Type=String,Description="GERP++_RS annotation provided by ANNOVAR">
+##INFO=<ID=GERP++_RS_rankscore,Number=.,Type=String,Description="GERP++_RS_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=phyloP100way_vertebrate,Number=.,Type=String,Description="phyloP100way_vertebrate annotation provided by ANNOVAR">
+##INFO=<ID=phyloP100way_vertebrate_rankscore,Number=.,Type=String,Description="phyloP100way_vertebrate_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=phyloP20way_mammalian,Number=.,Type=String,Description="phyloP20way_mammalian annotation provided by ANNOVAR">
+##INFO=<ID=phyloP20way_mammalian_rankscore,Number=.,Type=String,Description="phyloP20way_mammalian_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=phastCons100way_vertebrate,Number=.,Type=String,Description="phastCons100way_vertebrate annotation provided by ANNOVAR">
+##INFO=<ID=phastCons100way_vertebrate_rankscore,Number=.,Type=String,Description="phastCons100way_vertebrate_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=phastCons20way_mammalian,Number=.,Type=String,Description="phastCons20way_mammalian annotation provided by ANNOVAR">
+##INFO=<ID=phastCons20way_mammalian_rankscore,Number=.,Type=String,Description="phastCons20way_mammalian_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=SiPhy_29way_logOdds,Number=.,Type=String,Description="SiPhy_29way_logOdds annotation provided by ANNOVAR">
+##INFO=<ID=SiPhy_29way_logOdds_rankscore,Number=.,Type=String,Description="SiPhy_29way_logOdds_rankscore annotation provided by ANNOVAR">
+##INFO=<ID=Interpro_domain,Number=.,Type=String,Description="Interpro_domain annotation provided by ANNOVAR">
+##INFO=<ID=GTEx_V6p_gene,Number=.,Type=String,Description="GTEx_V6p_gene annotation provided by ANNOVAR">
+##INFO=<ID=GTEx_V6p_tissue,Number=.,Type=String,Description="GTEx_V6p_tissue annotation provided by ANNOVAR">
+##INFO=<ID=dbscSNV_ADA_SCORE,Number=.,Type=String,Description="dbscSNV_ADA_SCORE annotation provided by ANNOVAR">
+##INFO=<ID=dbscSNV_RF_SCORE,Number=.,Type=String,Description="dbscSNV_RF_SCORE annotation provided by ANNOVAR">
+##INFO=<ID=MCAP13,Number=.,Type=String,Description="MCAP13 annotation provided by ANNOVAR">
+##INFO=<ID=REVEL,Number=.,Type=String,Description="REVEL annotation provided by ANNOVAR">
+##INFO=<ID=regsnp_fpr,Number=.,Type=String,Description="regsnp_fpr annotation provided by ANNOVAR">
+##INFO=<ID=regsnp_disease,Number=.,Type=String,Description="regsnp_disease annotation provided by ANNOVAR">
+##INFO=<ID=regsnp_splicing_site,Number=.,Type=String,Description="regsnp_splicing_site annotation provided by ANNOVAR">
+##INFO=<ID=gerp++elem,Number=.,Type=String,Description="gerp++elem annotation provided by ANNOVAR">
+##INFO=<ID=gerp++gt2,Number=.,Type=String,Description="gerp++gt2 annotation provided by ANNOVAR">
+##INFO=<ID=CADD13_RawScore,Number=.,Type=String,Description="CADD13_RawScore annotation provided by ANNOVAR">
+##INFO=<ID=CADD13_PHRED,Number=.,Type=String,Description="CADD13_PHRED annotation provided by ANNOVAR">
+##INFO=<ID=FATHMM_noncoding,Number=.,Type=String,Description="FATHMM_noncoding annotation provided by ANNOVAR">
+##INFO=<ID=FATHMM_coding,Number=.,Type=String,Description="FATHMM_coding annotation provided by ANNOVAR">
+##INFO=<ID=GWAVA_region_score,Number=.,Type=String,Description="GWAVA_region_score annotation provided by ANNOVAR">
+##INFO=<ID=GWAVA_tss_score,Number=.,Type=String,Description="GWAVA_tss_score annotation provided by ANNOVAR">
+##INFO=<ID=GWAVA_unmatched_score,Number=.,Type=String,Description="GWAVA_unmatched_score annotation provided by ANNOVAR">
+##INFO=<ID=Eigen,Number=.,Type=String,Description="Eigen annotation provided by ANNOVAR">
+##INFO=<ID=phastConsElements46way,Number=.,Type=String,Description="phastConsElements46way annotation provided by ANNOVAR">
+##INFO=<ID=tfbsConsSites,Number=.,Type=String,Description="tfbsConsSites annotation provided by ANNOVAR">
+##INFO=<ID=cytoBand,Number=.,Type=String,Description="cytoBand annotation provided by ANNOVAR">
+##INFO=<ID=wgRna,Number=.,Type=String,Description="wgRna annotation provided by ANNOVAR">
+##INFO=<ID=targetScanS,Number=.,Type=String,Description="targetScanS annotation provided by ANNOVAR">
+##INFO=<ID=genomicSuperDups,Number=.,Type=String,Description="genomicSuperDups annotation provided by ANNOVAR">
+##INFO=<ID=dgvMerged,Number=.,Type=String,Description="dgvMerged annotation provided by ANNOVAR">
+##INFO=<ID=gwasCatalog,Number=.,Type=String,Description="gwasCatalog annotation provided by ANNOVAR">
+##INFO=<ID=wgEncodeRegTfbsClustered,Number=.,Type=String,Description="wgEncodeRegTfbsClustered annotation provided by ANNOVAR">
+##INFO=<ID=InterVar_automated,Number=.,Type=String,Description="InterVar_automated annotation provided by ANNOVAR">
+##INFO=<ID=PVS1,Number=.,Type=String,Description="PVS1 annotation provided by ANNOVAR">
+##INFO=<ID=PS1,Number=.,Type=String,Description="PS1 annotation provided by ANNOVAR">
+##INFO=<ID=PS2,Number=.,Type=String,Description="PS2 annotation provided by ANNOVAR">
+##INFO=<ID=PS3,Number=.,Type=String,Description="PS3 annotation provided by ANNOVAR">
+##INFO=<ID=PS4,Number=.,Type=String,Description="PS4 annotation provided by ANNOVAR">
+##INFO=<ID=PM1,Number=.,Type=String,Description="PM1 annotation provided by ANNOVAR">
+##INFO=<ID=PM2,Number=.,Type=String,Description="PM2 annotation provided by ANNOVAR">
+##INFO=<ID=PM3,Number=.,Type=String,Description="PM3 annotation provided by ANNOVAR">
+##INFO=<ID=PM4,Number=.,Type=String,Description="PM4 annotation provided by ANNOVAR">
+##INFO=<ID=PM5,Number=.,Type=String,Description="PM5 annotation provided by ANNOVAR">
+##INFO=<ID=PM6,Number=.,Type=String,Description="PM6 annotation provided by ANNOVAR">
+##INFO=<ID=PP1,Number=.,Type=String,Description="PP1 annotation provided by ANNOVAR">
+##INFO=<ID=PP2,Number=.,Type=String,Description="PP2 annotation provided by ANNOVAR">
+##INFO=<ID=PP3,Number=.,Type=String,Description="PP3 annotation provided by ANNOVAR">
+##INFO=<ID=PP4,Number=.,Type=String,Description="PP4 annotation provided by ANNOVAR">
+##INFO=<ID=PP5,Number=.,Type=String,Description="PP5 annotation provided by ANNOVAR">
+##INFO=<ID=BA1,Number=.,Type=String,Description="BA1 annotation provided by ANNOVAR">
+##INFO=<ID=BS1,Number=.,Type=String,Description="BS1 annotation provided by ANNOVAR">
+##INFO=<ID=BS2,Number=.,Type=String,Description="BS2 annotation provided by ANNOVAR">
+##INFO=<ID=BS3,Number=.,Type=String,Description="BS3 annotation provided by ANNOVAR">
+##INFO=<ID=BS4,Number=.,Type=String,Description="BS4 annotation provided by ANNOVAR">
+##INFO=<ID=BP1,Number=.,Type=String,Description="BP1 annotation provided by ANNOVAR">
+##INFO=<ID=BP2,Number=.,Type=String,Description="BP2 annotation provided by ANNOVAR">
+##INFO=<ID=BP3,Number=.,Type=String,Description="BP3 annotation provided by ANNOVAR">
+##INFO=<ID=BP4,Number=.,Type=String,Description="BP4 annotation provided by ANNOVAR">
+##INFO=<ID=BP5,Number=.,Type=String,Description="BP5 annotation provided by ANNOVAR">
+##INFO=<ID=BP6,Number=.,Type=String,Description="BP6 annotation provided by ANNOVAR">
+##INFO=<ID=BP7,Number=.,Type=String,Description="BP7 annotation provided by ANNOVAR">
+##INFO=<ID=ALLELE_END,Number=0,Type=Flag,Description="Flag the end of ANNOVAR annotation for one alternative allele">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SM_NGS2_20150101A

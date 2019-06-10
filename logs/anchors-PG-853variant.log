@@ -1,0 +1,19 @@
+INFO:stdout:[vcf] : ['sample1.hg19_multianno.vcf', 'sample2.hg19_multianno.vcf']
+INFO:stdout:[anchors file] : [multi-anchors/anchors-PG-853variant.json]
+INFO:stdout:[multi_anchors] : ['anchors-PG-853variant']
+INFO:stdout:[write2file] : [True]
+INFO:stdout:[threads] : [1]
+INFO:stdout:[anchors-PG-853variant]-[sample1.hg19_multianno.vcf] (time used: 0.00 min)
+INFO:stdout:[total] : 20
+INFO:stdout:[pass_anchors] : 0
+INFO:stdout:[PASS] : 0
+INFO:stdout:[S2.853.variants] : 0
+INFO:stdout:	- details_S2.853.variants:
+INFO:stdout:
+INFO:stdout:[anchors-PG-853variant]-[sample2.hg19_multianno.vcf] (time used: 0.00 min)
+INFO:stdout:[total] : 20
+INFO:stdout:[pass_anchors] : 0
+INFO:stdout:[PASS] : 0
+INFO:stdout:[S2.853.variants] : 0
+INFO:stdout:	- details_S2.853.variants:
+INFO:stdout:

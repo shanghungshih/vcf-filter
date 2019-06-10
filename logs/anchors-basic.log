@@ -1,0 +1,59 @@
+INFO:stdout:[vcf] : ['sample1.hg19_multianno.vcf', 'sample2.hg19_multianno.vcf']
+INFO:stdout:[anchors file] : [multi-anchors/anchors-basic.json]
+INFO:stdout:[anchors] : ['anchors-PASS', 'anchors-AF<0.01', 'anchors-AF<0.05', 'anchors-PASS&AF<0.01', 'anchors-PASS&AF<0.05']
+INFO:stdout:[write2file] : [False]
+INFO:stdout:[threads] : [2]
+INFO:stdout:[anchors-PASS]-[sample1.hg19_multianno.vcf] (time used: 0.00 min)
+INFO:stdout:[total] : 20
+INFO:stdout:[anchors-AF<0.01]-[sample1.hg19_multianno.vcf] (time used: 0.00 min)
+INFO:stdout:[pass_anchors] : 0
+INFO:stdout:[total] : 20
+INFO:stdout:[PASS] : 0
+INFO:stdout:[pass_anchors] : 0
+INFO:stdout:
+INFO:stdout:[AF<0.01] : 0
+INFO:stdout:
+INFO:stdout:[anchors-PASS]-[sample2.hg19_multianno.vcf] (time used: 0.00 min)
+INFO:stdout:[total] : 20
+INFO:stdout:[pass_anchors] : 0
+INFO:stdout:[PASS] : 0
+INFO:stdout:
+INFO:stdout:[anchors-AF<0.01]-[sample2.hg19_multianno.vcf] (time used: 0.00 min)
+INFO:stdout:[total] : 20
+INFO:stdout:[pass_anchors] : 0
+INFO:stdout:[AF<0.01] : 0
+INFO:stdout:
+INFO:stdout:[anchors-AF<0.05]-[sample1.hg19_multianno.vcf] (time used: 0.00 min)
+INFO:stdout:[total] : 20
+INFO:stdout:[pass_anchors] : 0
+INFO:stdout:[AF<0.05] : 0
+INFO:stdout:
+INFO:stdout:[anchors-PASS&AF<0.01]-[sample1.hg19_multianno.vcf] (time used: 0.00 min)
+INFO:stdout:[total] : 20
+INFO:stdout:[pass_anchors] : 0
+INFO:stdout:[PASS] : 0
+INFO:stdout:[AF<0.01] : 0
+INFO:stdout:
+INFO:stdout:[anchors-AF<0.05]-[sample2.hg19_multianno.vcf] (time used: 0.00 min)
+INFO:stdout:[total] : 20
+INFO:stdout:[pass_anchors] : 0
+INFO:stdout:[AF<0.05] : 0
+INFO:stdout:
+INFO:stdout:[anchors-PASS&AF<0.01]-[sample2.hg19_multianno.vcf] (time used: 0.00 min)
+INFO:stdout:[total] : 20
+INFO:stdout:[pass_anchors] : 0
+INFO:stdout:[PASS] : 0
+INFO:stdout:[AF<0.01] : 0
+INFO:stdout:
+INFO:stdout:[anchors-PASS&AF<0.05]-[sample1.hg19_multianno.vcf] (time used: 0.00 min)
+INFO:stdout:[total] : 20
+INFO:stdout:[pass_anchors] : 0
+INFO:stdout:[PASS] : 0
+INFO:stdout:[AF<0.05] : 0
+INFO:stdout:
+INFO:stdout:[anchors-PASS&AF<0.05]-[sample2.hg19_multianno.vcf] (time used: 0.00 min)
+INFO:stdout:[total] : 20
+INFO:stdout:[pass_anchors] : 0
+INFO:stdout:[PASS] : 0
+INFO:stdout:[AF<0.05] : 0
+INFO:stdout:
