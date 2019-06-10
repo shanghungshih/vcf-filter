@@ -2,6 +2,7 @@
   <img align="center" src="img/icon.png" height="320">
 </p>
 
+# vcf-filter
 - multi-anchors filtering and multi-threads implementation for vcf filtering
     - for each `anchor` can include several `sub-anchors`.
     - in singel anchor, `pass` if all sub-anchors satisfied.
