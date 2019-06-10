@@ -1,0 +1,47 @@
+{
+    "anchors-PASS": {
+        "PASS": {
+            "key": "PASS",
+            "type": "==",
+            "value": "PASS"
+        }
+    },
+    "anchors-AF<0.01": {
+        "AF<0.01": {
+            "key": "AF",
+            "type": "<",
+            "value": 0.01
+        }
+    },
+    "anchors-AF<0.05": {
+        "AF<0.05": {
+            "key": "AF",
+            "type": "<",
+            "value": 0.05
+        }
+    },
+    "anchors-PASS&AF<0.01": {
+        "PASS": {
+            "key": "PASS",
+            "type": "==",
+            "value": "PASS"
+        },
+        "AF<0.01": {
+            "key": "AF",
+            "type": "<",
+            "value": 0.01
+        }
+    },
+    "anchors-PASS&AF<0.05": {
+        "PASS": {
+            "key": "PASS",
+            "type": "==",
+            "value": "PASS"
+        },
+        "AF<0.05": {
+            "key": "AF",
+            "type": "<",
+            "value": 0.05
+        }
+    }
+}

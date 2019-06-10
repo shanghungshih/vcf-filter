@@ -1,0 +1,136 @@
+{
+    "anchors-PG:152gene": {
+        "PASS": {
+            "key": "PASS",
+            "type": "==",
+            "value": "PASS"
+        },
+        "S1.152.genes": {
+            "key": "Gene.refGene",
+            "type": "in",
+            "value": ["ATR", "FANCD2", "FANCE", "FANCF", "HNF1A", "LMO1", "MPL", "PMS1", "PRF1", "SETBP1", "TSHR", "DROSHA", "ABCB11", "ALK", "APC", "ATM", "AXIN2", "BAP1", "BLM", "BMPR1A", "BRCA1", "BRCA2", "BRIP1", "BUB1B", "CBL", "CDC73", "CDH1", "CDK4", "CDKN1B", "CDKN2A", "CEBPA", "CHEK2", "COL7A1", "CYLD", "DDB2", "DICER1", "DIS3L2", "DKC1", "DOCK8", "EGFR", "ELANE", "ERCC2", "ERCC3", "ERCC4", "ERCC5", "EXT1", "EXT2", "FAH", "FANCA", "FANCC", "FANCG", "FH", "FLCN", "GATA2", "GBA", "GJB2", "GPC3", "HFE", "HMBS", "HRAS", "ITK", "KIT", "MAX", "MEN1", "MET", "MLH1", "MSH2", "MSH6", "MTAP", "MUTYH", "NBN", "NF1", "NF2", "PALB2", "PDGFRA", "PHOX2B", "PMS2", "POLD1", "POLE", "POLH", "PRKAR1A", "PRSS1", "PTCH1", "PTEN", "PTPN11", "RAD51C", "RAD51D", "RB1", "RECQL4", "RET", "RHBDF2", "RMRP", "RUNX1", "SBDS", "SDHA", "SDHAF2", "SDHB", "SDHC", "SDHD", "SERPINA1", "SH2D1A", "SLC25A13", "SMAD4", "SMARCA4", "SMARCB1", "SMARCE1", "SOS1", "SRY", "STAT3", "STK11", "SUFU", "TERT", "TGFBR1", "TMEM127", "TNFRSF6", "TP53", "TRIM37 ", "TSC1", "TSC2", "UROD", "VHL", "WAS", "WRN", "WT1", "XPA", "XPC", "CTR9", "ETV6", "FANCM", "JMJD1C", "MITF", "NTHL1", "PAX5", "POT1", "PRDM9", "RECQL", "SPRTN", "ERCC1", "FANCI", "FANCL", "NHP2", "NOP10", "SH2B3", "BRAF", "CDKN1C", "EPCAM", "KRAS", "MAP2K1", "MAP2K2", "NRAS", "RAF1", "SHOC2"]
+        }
+    },
+    "anchors-PG:152gene&P": {
+        "PASS": {
+            "key": "PASS",
+            "type": "==",
+            "value": "PASS"
+        },
+        "S1.152.genes": {
+            "key": "Gene.refGene",
+            "type": "in",
+            "value": ["ATR", "FANCD2", "FANCE", "FANCF", "HNF1A", "LMO1", "MPL", "PMS1", "PRF1", "SETBP1", "TSHR", "DROSHA", "ABCB11", "ALK", "APC", "ATM", "AXIN2", "BAP1", "BLM", "BMPR1A", "BRCA1", "BRCA2", "BRIP1", "BUB1B", "CBL", "CDC73", "CDH1", "CDK4", "CDKN1B", "CDKN2A", "CEBPA", "CHEK2", "COL7A1", "CYLD", "DDB2", "DICER1", "DIS3L2", "DKC1", "DOCK8", "EGFR", "ELANE", "ERCC2", "ERCC3", "ERCC4", "ERCC5", "EXT1", "EXT2", "FAH", "FANCA", "FANCC", "FANCG", "FH", "FLCN", "GATA2", "GBA", "GJB2", "GPC3", "HFE", "HMBS", "HRAS", "ITK", "KIT", "MAX", "MEN1", "MET", "MLH1", "MSH2", "MSH6", "MTAP", "MUTYH", "NBN", "NF1", "NF2", "PALB2", "PDGFRA", "PHOX2B", "PMS2", "POLD1", "POLE", "POLH", "PRKAR1A", "PRSS1", "PTCH1", "PTEN", "PTPN11", "RAD51C", "RAD51D", "RB1", "RECQL4", "RET", "RHBDF2", "RMRP", "RUNX1", "SBDS", "SDHA", "SDHAF2", "SDHB", "SDHC", "SDHD", "SERPINA1", "SH2D1A", "SLC25A13", "SMAD4", "SMARCA4", "SMARCB1", "SMARCE1", "SOS1", "SRY", "STAT3", "STK11", "SUFU", "TERT", "TGFBR1", "TMEM127", "TNFRSF6", "TP53", "TRIM37 ", "TSC1", "TSC2", "UROD", "VHL", "WAS", "WRN", "WT1", "XPA", "XPC", "CTR9", "ETV6", "FANCM", "JMJD1C", "MITF", "NTHL1", "PAX5", "POT1", "PRDM9", "RECQL", "SPRTN", "ERCC1", "FANCI", "FANCL", "NHP2", "NOP10", "SH2B3", "BRAF", "CDKN1C", "EPCAM", "KRAS", "MAP2K1", "MAP2K2", "NRAS", "RAF1", "SHOC2"]
+        },
+        "Pathogenic": {
+            "key": "CLNSIG",
+            "type": "==",
+            "value": "Pathogenic"
+        }
+    },
+    "anchors-PG:152gene&LP": {
+        "PASS": {
+            "key": "PASS",
+            "type": "==",
+            "value": "PASS"
+        },
+        "S1.152.genes": {
+            "key": "Gene.refGene",
+            "type": "in",
+            "value": ["ATR", "FANCD2", "FANCE", "FANCF", "HNF1A", "LMO1", "MPL", "PMS1", "PRF1", "SETBP1", "TSHR", "DROSHA", "ABCB11", "ALK", "APC", "ATM", "AXIN2", "BAP1", "BLM", "BMPR1A", "BRCA1", "BRCA2", "BRIP1", "BUB1B", "CBL", "CDC73", "CDH1", "CDK4", "CDKN1B", "CDKN2A", "CEBPA", "CHEK2", "COL7A1", "CYLD", "DDB2", "DICER1", "DIS3L2", "DKC1", "DOCK8", "EGFR", "ELANE", "ERCC2", "ERCC3", "ERCC4", "ERCC5", "EXT1", "EXT2", "FAH", "FANCA", "FANCC", "FANCG", "FH", "FLCN", "GATA2", "GBA", "GJB2", "GPC3", "HFE", "HMBS", "HRAS", "ITK", "KIT", "MAX", "MEN1", "MET", "MLH1", "MSH2", "MSH6", "MTAP", "MUTYH", "NBN", "NF1", "NF2", "PALB2", "PDGFRA", "PHOX2B", "PMS2", "POLD1", "POLE", "POLH", "PRKAR1A", "PRSS1", "PTCH1", "PTEN", "PTPN11", "RAD51C", "RAD51D", "RB1", "RECQL4", "RET", "RHBDF2", "RMRP", "RUNX1", "SBDS", "SDHA", "SDHAF2", "SDHB", "SDHC", "SDHD", "SERPINA1", "SH2D1A", "SLC25A13", "SMAD4", "SMARCA4", "SMARCB1", "SMARCE1", "SOS1", "SRY", "STAT3", "STK11", "SUFU", "TERT", "TGFBR1", "TMEM127", "TNFRSF6", "TP53", "TRIM37 ", "TSC1", "TSC2", "UROD", "VHL", "WAS", "WRN", "WT1", "XPA", "XPC", "CTR9", "ETV6", "FANCM", "JMJD1C", "MITF", "NTHL1", "PAX5", "POT1", "PRDM9", "RECQL", "SPRTN", "ERCC1", "FANCI", "FANCL", "NHP2", "NOP10", "SH2B3", "BRAF", "CDKN1C", "EPCAM", "KRAS", "MAP2K1", "MAP2K2", "NRAS", "RAF1", "SHOC2"]
+        },
+        "Likely_pathogenic": {
+            "key": "CLNSIG",
+            "type": "==",
+            "value": "Likely_pathogenic"
+        }
+    },
+    "anchors-PG:152gene&P&AF<0.01": {
+        "PASS": {
+            "key": "PASS",
+            "type": "==",
+            "value": "PASS"
+        },
+        "S1.152.genes": {
+            "key": "Gene.refGene",
+            "type": "in",
+            "value": ["ATR", "FANCD2", "FANCE", "FANCF", "HNF1A", "LMO1", "MPL", "PMS1", "PRF1", "SETBP1", "TSHR", "DROSHA", "ABCB11", "ALK", "APC", "ATM", "AXIN2", "BAP1", "BLM", "BMPR1A", "BRCA1", "BRCA2", "BRIP1", "BUB1B", "CBL", "CDC73", "CDH1", "CDK4", "CDKN1B", "CDKN2A", "CEBPA", "CHEK2", "COL7A1", "CYLD", "DDB2", "DICER1", "DIS3L2", "DKC1", "DOCK8", "EGFR", "ELANE", "ERCC2", "ERCC3", "ERCC4", "ERCC5", "EXT1", "EXT2", "FAH", "FANCA", "FANCC", "FANCG", "FH", "FLCN", "GATA2", "GBA", "GJB2", "GPC3", "HFE", "HMBS", "HRAS", "ITK", "KIT", "MAX", "MEN1", "MET", "MLH1", "MSH2", "MSH6", "MTAP", "MUTYH", "NBN", "NF1", "NF2", "PALB2", "PDGFRA", "PHOX2B", "PMS2", "POLD1", "POLE", "POLH", "PRKAR1A", "PRSS1", "PTCH1", "PTEN", "PTPN11", "RAD51C", "RAD51D", "RB1", "RECQL4", "RET", "RHBDF2", "RMRP", "RUNX1", "SBDS", "SDHA", "SDHAF2", "SDHB", "SDHC", "SDHD", "SERPINA1", "SH2D1A", "SLC25A13", "SMAD4", "SMARCA4", "SMARCB1", "SMARCE1", "SOS1", "SRY", "STAT3", "STK11", "SUFU", "TERT", "TGFBR1", "TMEM127", "TNFRSF6", "TP53", "TRIM37 ", "TSC1", "TSC2", "UROD", "VHL", "WAS", "WRN", "WT1", "XPA", "XPC", "CTR9", "ETV6", "FANCM", "JMJD1C", "MITF", "NTHL1", "PAX5", "POT1", "PRDM9", "RECQL", "SPRTN", "ERCC1", "FANCI", "FANCL", "NHP2", "NOP10", "SH2B3", "BRAF", "CDKN1C", "EPCAM", "KRAS", "MAP2K1", "MAP2K2", "NRAS", "RAF1", "SHOC2"]
+        },
+        "Pathogenic": {
+            "key": "CLNSIG",
+            "type": "==",
+            "value": "Pathogenic"
+        },
+        "AF<0.01": {
+            "key": "AF",
+            "type": "<",
+            "value": 0.01
+        }
+    },
+    "anchors-PG:152gene&P&AF<0.05": {
+        "PASS": {
+            "key": "PASS",
+            "type": "==",
+            "value": "PASS"
+        },
+        "S1.152.genes": {
+            "key": "Gene.refGene",
+            "type": "in",
+            "value": ["ATR", "FANCD2", "FANCE", "FANCF", "HNF1A", "LMO1", "MPL", "PMS1", "PRF1", "SETBP1", "TSHR", "DROSHA", "ABCB11", "ALK", "APC", "ATM", "AXIN2", "BAP1", "BLM", "BMPR1A", "BRCA1", "BRCA2", "BRIP1", "BUB1B", "CBL", "CDC73", "CDH1", "CDK4", "CDKN1B", "CDKN2A", "CEBPA", "CHEK2", "COL7A1", "CYLD", "DDB2", "DICER1", "DIS3L2", "DKC1", "DOCK8", "EGFR", "ELANE", "ERCC2", "ERCC3", "ERCC4", "ERCC5", "EXT1", "EXT2", "FAH", "FANCA", "FANCC", "FANCG", "FH", "FLCN", "GATA2", "GBA", "GJB2", "GPC3", "HFE", "HMBS", "HRAS", "ITK", "KIT", "MAX", "MEN1", "MET", "MLH1", "MSH2", "MSH6", "MTAP", "MUTYH", "NBN", "NF1", "NF2", "PALB2", "PDGFRA", "PHOX2B", "PMS2", "POLD1", "POLE", "POLH", "PRKAR1A", "PRSS1", "PTCH1", "PTEN", "PTPN11", "RAD51C", "RAD51D", "RB1", "RECQL4", "RET", "RHBDF2", "RMRP", "RUNX1", "SBDS", "SDHA", "SDHAF2", "SDHB", "SDHC", "SDHD", "SERPINA1", "SH2D1A", "SLC25A13", "SMAD4", "SMARCA4", "SMARCB1", "SMARCE1", "SOS1", "SRY", "STAT3", "STK11", "SUFU", "TERT", "TGFBR1", "TMEM127", "TNFRSF6", "TP53", "TRIM37 ", "TSC1", "TSC2", "UROD", "VHL", "WAS", "WRN", "WT1", "XPA", "XPC", "CTR9", "ETV6", "FANCM", "JMJD1C", "MITF", "NTHL1", "PAX5", "POT1", "PRDM9", "RECQL", "SPRTN", "ERCC1", "FANCI", "FANCL", "NHP2", "NOP10", "SH2B3", "BRAF", "CDKN1C", "EPCAM", "KRAS", "MAP2K1", "MAP2K2", "NRAS", "RAF1", "SHOC2"]
+        },
+        "Pathogenic": {
+            "key": "CLNSIG",
+            "type": "==",
+            "value": "Pathogenic"
+        },
+        "AF<0.05": {
+            "key": "AF",
+            "type": "<",
+            "value": 0.05
+        }
+    },
+    "anchors-PG:152gene&LP&AF<0.01": {
+        "PASS": {
+            "key": "PASS",
+            "type": "==",
+            "value": "PASS"
+        },
+        "S1.152.genes": {
+            "key": "Gene.refGene",
+            "type": "in",
+            "value": ["ATR", "FANCD2", "FANCE", "FANCF", "HNF1A", "LMO1", "MPL", "PMS1", "PRF1", "SETBP1", "TSHR", "DROSHA", "ABCB11", "ALK", "APC", "ATM", "AXIN2", "BAP1", "BLM", "BMPR1A", "BRCA1", "BRCA2", "BRIP1", "BUB1B", "CBL", "CDC73", "CDH1", "CDK4", "CDKN1B", "CDKN2A", "CEBPA", "CHEK2", "COL7A1", "CYLD", "DDB2", "DICER1", "DIS3L2", "DKC1", "DOCK8", "EGFR", "ELANE", "ERCC2", "ERCC3", "ERCC4", "ERCC5", "EXT1", "EXT2", "FAH", "FANCA", "FANCC", "FANCG", "FH", "FLCN", "GATA2", "GBA", "GJB2", "GPC3", "HFE", "HMBS", "HRAS", "ITK", "KIT", "MAX", "MEN1", "MET", "MLH1", "MSH2", "MSH6", "MTAP", "MUTYH", "NBN", "NF1", "NF2", "PALB2", "PDGFRA", "PHOX2B", "PMS2", "POLD1", "POLE", "POLH", "PRKAR1A", "PRSS1", "PTCH1", "PTEN", "PTPN11", "RAD51C", "RAD51D", "RB1", "RECQL4", "RET", "RHBDF2", "RMRP", "RUNX1", "SBDS", "SDHA", "SDHAF2", "SDHB", "SDHC", "SDHD", "SERPINA1", "SH2D1A", "SLC25A13", "SMAD4", "SMARCA4", "SMARCB1", "SMARCE1", "SOS1", "SRY", "STAT3", "STK11", "SUFU", "TERT", "TGFBR1", "TMEM127", "TNFRSF6", "TP53", "TRIM37 ", "TSC1", "TSC2", "UROD", "VHL", "WAS", "WRN", "WT1", "XPA", "XPC", "CTR9", "ETV6", "FANCM", "JMJD1C", "MITF", "NTHL1", "PAX5", "POT1", "PRDM9", "RECQL", "SPRTN", "ERCC1", "FANCI", "FANCL", "NHP2", "NOP10", "SH2B3", "BRAF", "CDKN1C", "EPCAM", "KRAS", "MAP2K1", "MAP2K2", "NRAS", "RAF1", "SHOC2"]
+        },
+        "Clinvar.Likely_pathogenic": {
+            "key": "CLNSIG",
+            "type": "==",
+            "value": "Likely_pathogenic"
+        },
+        "AF<0.01": {
+            "key": "AF",
+            "type": "<",
+            "value": 0.01
+        }
+    },
+    "anchors-PG:152gene&LP&AF<0.05": {
+        "PASS": {
+            "key": "PASS",
+            "type": "==",
+            "value": "PASS"
+        },
+        "S1.152.genes": {
+            "key": "Gene.refGene",
+            "type": "in",
+            "value": ["ATR", "FANCD2", "FANCE", "FANCF", "HNF1A", "LMO1", "MPL", "PMS1", "PRF1", "SETBP1", "TSHR", "DROSHA", "ABCB11", "ALK", "APC", "ATM", "AXIN2", "BAP1", "BLM", "BMPR1A", "BRCA1", "BRCA2", "BRIP1", "BUB1B", "CBL", "CDC73", "CDH1", "CDK4", "CDKN1B", "CDKN2A", "CEBPA", "CHEK2", "COL7A1", "CYLD", "DDB2", "DICER1", "DIS3L2", "DKC1", "DOCK8", "EGFR", "ELANE", "ERCC2", "ERCC3", "ERCC4", "ERCC5", "EXT1", "EXT2", "FAH", "FANCA", "FANCC", "FANCG", "FH", "FLCN", "GATA2", "GBA", "GJB2", "GPC3", "HFE", "HMBS", "HRAS", "ITK", "KIT", "MAX", "MEN1", "MET", "MLH1", "MSH2", "MSH6", "MTAP", "MUTYH", "NBN", "NF1", "NF2", "PALB2", "PDGFRA", "PHOX2B", "PMS2", "POLD1", "POLE", "POLH", "PRKAR1A", "PRSS1", "PTCH1", "PTEN", "PTPN11", "RAD51C", "RAD51D", "RB1", "RECQL4", "RET", "RHBDF2", "RMRP", "RUNX1", "SBDS", "SDHA", "SDHAF2", "SDHB", "SDHC", "SDHD", "SERPINA1", "SH2D1A", "SLC25A13", "SMAD4", "SMARCA4", "SMARCB1", "SMARCE1", "SOS1", "SRY", "STAT3", "STK11", "SUFU", "TERT", "TGFBR1", "TMEM127", "TNFRSF6", "TP53", "TRIM37 ", "TSC1", "TSC2", "UROD", "VHL", "WAS", "WRN", "WT1", "XPA", "XPC", "CTR9", "ETV6", "FANCM", "JMJD1C", "MITF", "NTHL1", "PAX5", "POT1", "PRDM9", "RECQL", "SPRTN", "ERCC1", "FANCI", "FANCL", "NHP2", "NOP10", "SH2B3", "BRAF", "CDKN1C", "EPCAM", "KRAS", "MAP2K1", "MAP2K2", "NRAS", "RAF1", "SHOC2"]
+        },
+        "Clinvar.Likely_pathogenic": {
+            "key": "CLNSIG",
+            "type": "==",
+            "value": "Likely_pathogenic"
+        },
+        "AF<0.05": {
+            "key": "AF",
+            "type": "<",
+            "value": 0.05
+        }
+    }
+}
