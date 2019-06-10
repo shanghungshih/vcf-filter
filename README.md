@@ -1,6 +1,8 @@
 # vcf-filter
 
-<img align="center" src="img/icon.png" height="320">
+<p align="center">
+  <img align="center" src="img/icon.png" height="320">
+</p>
 
 - multi-anchors filtering and multi-threads implementation for vcf filtering
     - for each `anchor` can include several `sub-anchors`.
