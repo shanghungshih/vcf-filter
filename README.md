@@ -25,12 +25,12 @@ git clone https://github.com/shanghungshih/vcf-filter.git
 
 ## Quick start
 1. without write2file
-``` python
+```
 python3 vcf-filter.py -v sample1.hg19_multianno.vcf,sample2.hg19_multianno.vcf -a anchors/anchors-basic.json -t 2
 ```
 
 2. with write2file
-``` python
+```
 python3 vcf-filter.py -w true -v sample1.hg19_multianno.vcf,sample2.hg19_multianno.vcf -a anchors/anchors-PG-853variant.json
 ```
 
@@ -52,7 +52,7 @@ python3 vcf-filter.py -w true -v sample1.hg19_multianno.vcf,sample2.hg19_multian
 - `total`: # of total variants
 - `pass_anchors`: # of variants that pass all anchors
 
-```bash
+```
 INFO     [vcf] : ['sample1.hg19_multianno.vcf', 'sample2.hg19_multianno.vcf']
 INFO     [anchors file] : [anchors/anchors-basic.json]
 INFO     [anchors] : ['anchors-PASS', 'anchors-AF<0.01', 'anchors-AF<0.05', 'anchors-PASS&AF<0.01', 'anchors-PASS&AF<0.05']
