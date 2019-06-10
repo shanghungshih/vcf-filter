@@ -20,7 +20,7 @@ class VCF_filter:
         if self.write2file is True:
             if os.path.exists('passed-vcfs') is False:
                 os.makedirs('passed-vcfs')
-            vcf_name = self.vcf if self.vcf[-2:] != 'gz' else self.vcf[:-2]
+            vcf_name = self.vcf.split('/')[-1] if self.vcf[-2:] != 'gz' else self.vcf.split('/')[-1][:-2]
             self.output = open('passed-vcfs/%s-%s'%(self.anchors_name, vcf_name), 'w')
         self.results = {'total': 0, 'pass_anchors': 0}
         for anchor in self.anchors:

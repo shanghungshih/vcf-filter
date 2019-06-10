@@ -40,19 +40,19 @@ python3 vcf-filter.py -w true -v sample1.hg19_multianno.vcf,sample2.hg19_multian
 ## anchors configuration
 1. in anchors, define every `anchor name` which will show in results.
 2. for each anchor, please define:
-    - `key`: keys presents in info column of annovar-annotated vcf (ex. Func.refGene=TP53;AF=0.001;)
+    - `key`: keys presents in info column of annovar-annotated vcf (ex. Func.refGene=TP53;AF=0.001;), and for variant comparison, using `variant` for key name.
     - `type`: operator to perform comparison (valid types: `==`, `>=`, `<=`, `>`, `<`, `in`, `not in`)
     - `value`: operand to compare with vcf
 
 ## Notes
-- count if variant pass all anchors
+- count if variant pass all sub-anchors.
 - for input file, only .vcf will be accepted.
-- configure the anchors.json before you run the program, and make sure the key of each anchor appear in your vcf annotation.
+- configure the anchors.json before you run the program, and make sure the key of each sub-anchor appear in your vcf annotation.
 - multi-threads is for multiple vcfs.
 
 ## example output (using `anchors/anchors-basic.json`)
 - `total`: # of total variants
-- `pass_anchors`: # of variants that pass all anchors
+- `pass_anchors`: # of variants that pass all sub-anchors in an anchor
 
 ```
 INFO     [vcf] : ['sample1.hg19_multianno.vcf', 'sample2.hg19_multianno.vcf']
