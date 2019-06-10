@@ -1,5 +1,3 @@
-# vcf-filter
-
 <p align="center">
   <img align="center" src="img/icon.png" height="320">
 </p>
